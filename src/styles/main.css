@@ -1,0 +1,82 @@
+:root {
+  --text-dark: #000;
+  --text-light:#fff;
+  --text-grey: #adbdcc;
+  --purple-1: #6962f7;
+  --purple-2: #7000ff;
+  --primary-accent: #0a2540;
+}
+
+:root {
+  --body-font: "Roboto", sans-serif;
+  --heading-font: "Anek Telugu", sans-serif;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 94px;
+  font-weight: 600;
+  line-height: 108px;
+  margin: 0;
+  width: 100%;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 75px;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 0.25px;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+}
+
+h4 {
+  font-family: var(--heading-font);
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+  letter-spacing: 0.25px;
+}
+
+h5 {
+  font-family: var(--heading-font);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+}
+
+h6 {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+}
+
+a {
+  color: var(--purple-1);
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: var(--primary-accent);
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+/*# sourceMappingURL=main.css.map */
