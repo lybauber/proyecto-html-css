@@ -1,3 +1,4 @@
+/*hero section*/
 .button-container {
     display: flex;
     margin: var(--spacing-md) 0;
@@ -25,4 +26,73 @@
 .hero-phone {
     height: 628px;
     transform: translate(32px, -32px);
+}
+
+/*partners section*/
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: var(--spacing-xl) 0;
+    column-gap: var(--spacing-md) ;
+    row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+    height: 60px;
+    place-self: center;
+}
+
+/*unified platform*/
+.unified-platform {
+    padding: var(--spacing-lx) 0;
+}
+
+.unified-platform h2 {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+}
+.unified-platform .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0;
+}
+.unified-platform .primary-button:hover {
+    background-color: var(--primary-accent);
+}
+
+/* GRaphic section*/
+
+.graphic-grid {
+    display: grid;
+    grid-template-areas: 
+        "card slack slack"
+        "phone slack slack"
+        "phone dash dash";
+    grid-gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+}
+
+#credit-card {
+    grid-area: card;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+#slack-invoice {
+    grid-area: slack;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+#phone {
+    grid-area: phone;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
+}
+
+#dash {
+    grid-area: dash;
+    width: 100%;
+    box-shadow: var(--standard-box-shadow);
 }

@@ -9,6 +9,7 @@
   --bg-white: #fff;
   --bg-lighr: #f7f9fc;
   --primary-btn-hover-color: #6d7a88;
+  --standard-box-shadow: 0px 2px 40px rgb(0,0,0, 0.15);
 }
 
 :root {
@@ -43,12 +44,10 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 75px;
+  font-size: 40px;
+  font-weight: 600;
   margin: 0;
   width: 100%;
-  letter-spacing: 0.25px;
 }
 
 h3 {
@@ -85,6 +84,7 @@ h6 {
 }
 
 a {
+  text-decoration: none;
   color: var(--purple-1);
   font-weight: 500;
   transition: color 0.25s ease;
@@ -99,7 +99,7 @@ body {
   color: var(--text-dark);
   width: 100%;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--purple-1);
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,6 +215,7 @@ header {
   text-decoration: underline;
 }
 
+/*hero section*/
 .button-container {
   display: flex;
   margin: var(--spacing-md) 0;
@@ -242,6 +243,72 @@ header {
   transform: translate(32px, -32px);
 }
 
+/*partners section*/
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: var(--spacing-xl) 0;
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
+}
+
+.partners-grid img {
+  height: 60px;
+  place-self: center;
+}
+
+/*unified platform*/
+.unified-platform {
+  padding: var(--spacing-lx) 0;
+}
+
+.unified-platform h2 {
+  width: 50%;
+  margin: var(--spacing-md) 0;
+}
+
+.unified-platform .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0;
+}
+
+.unified-platform .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+
+/* GRaphic section*/
+.graphic-grid {
+  display: grid;
+  grid-template-areas: "card slack slack" "phone slack slack" "phone dash dash";
+  grid-gap: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
+}
+
+#credit-card {
+  grid-area: card;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#slack-invoice {
+  grid-area: slack;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#phone {
+  grid-area: phone;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#dash {
+  grid-area: dash;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
 .section-container {
   width: 100%;
   max-width: var(--standard-width);
@@ -267,6 +334,27 @@ header {
 .two-column > .col-right {
   width: 50%;
   padding: 0 0 0 var(--spacing-md);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+  height: 50px;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
 }
 
 main {
